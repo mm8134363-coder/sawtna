@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0b1728">
+  <meta name="description" content="صوتنا - دردشة صوتية وترفيهية">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="style.css">
+  <title>صوتنا</title>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">🎙️ صوتنا</div>
+    <div id="status" class="status"><span class="dot"></span> غير متصل</div>
+  </header>
+
+  <main class="wrap">
+    <section class="card" id="loginCard">
+      <h1>دردشة صوتية وترفيهية</h1>
+      <p>اختر اسمك ثم ادخل غرفة.</p>
+      <input id="name" type="text" maxlength="24" placeholder="اكتب اسمك" autocomplete="nickname">
+      <button id="enterBtn" class="primary">دخول</button>
+      <button id="installBtn" class="install hidden">📲 تثبيت صوتنا على الهاتف</button>
+      <p id="installHint" class="hint"></p>
+    </section>
+
+    <section class="card hidden" id="roomCard">
+      <div class="roomHead">
+        <div>
+          <h2 id="welcome"></h2>
+          <p>اختر غرفة للدخول.</p>
+        </div>
+        <button id="backBtn" class="small">خروج</button>
+      </div>
+      <div class="rooms">
+        <button class="room" data-room="الغرفة العامة">🎙️ الغرفة العامة <span>دخول</span></button>
+        <button class="room" data-room="الترفيه">🎮 الترفيه <span>دخول</span></button>
+        <button class="room" data-room="الأصدقاء">👥 الأصدقاء <span>دخول</span></button>
+      </div>
+      <div id="roomNotice" class="notice">هذه نسخة PWA جاهزة للتثبيت. ربط الصوت الحقيقي يحتاج خادم WebRTC/إشارة.</div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

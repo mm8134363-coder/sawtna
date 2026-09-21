@@ -1,0 +1,17 @@
+{
+  "name": "صوتنا - دردشة صوتية وترفيهية",
+  "short_name": "صوتنا",
+  "description": "دردشة صوتية وترفيهية",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#071221",
+  "theme_color": "#12253c",
+  "orientation": "portrait-primary",
+  "icons": [
+    {"src":"icons/icon-192.png","sizes":"192x192","type":"image/png","purpose":"any maskable"},
+    {"src":"icons/icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}
+  ]
+}
